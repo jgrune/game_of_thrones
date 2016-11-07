@@ -1,0 +1,16 @@
+<%= form_for @char do |f| %>
+
+<p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+
+<p><%= f.label :age %>
+  <%= f.text_field :age %></p>
+
+<p><%= f.label "Image" %>
+  <%= f.text_field :img_url %></p>
+
+
+  <p>House <%= select_tag :house_id, options_for_select(@houses, @char.house.id) %></p>
+
+  <p><%= f.submit %></p>
+<% end %>

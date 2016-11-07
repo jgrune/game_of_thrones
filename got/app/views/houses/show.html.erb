@@ -1,0 +1,17 @@
+
+  <h1><%= @house.name %> <%= link_to "(Edit)", edit_house_path(@house) %></h1>
+<h2>Motto: <%= @house.motto %></h2>
+<h2>Region: <%= @house.region %></h2>
+<img src="<%= @house.img_url %>">
+<hr>
+<h1>Characters:</h1>
+
+<main>
+  <% @house.characters.each do |char| %>
+    <div class="got">
+      <h2>Name: <%= char.name %></h2>
+      <h2>Age: <%= char.age %></h2>
+      <img src="<%= char.img_url %>">
+    </div>
+  <% end %>
+</main>

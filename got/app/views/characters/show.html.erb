@@ -1,0 +1,11 @@
+<h1> Character Details: </h1>
+<main>
+  <div class="got">
+    <h2>Name: <%= @char.name %></h2>
+    <h2>Age: <%= @char.age %></h2>
+    <h2>House: <%= @char.house.name %></h2>
+    <img src="<%= @char.img_url %>"><br/>
+    <%= link_to "Edit", edit_character_path(@char) %>
+    <%= link_to "Delete", character_path(@char), method: :delete %>
+  </div>
+</main>

@@ -1,0 +1,53 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {
+  text-align: center;
+  background-image: url("got2.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ img {
+   max-height: 30vh;
+   max-width: 30vw;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ .got{
+   max-width: 50vw;
+   background-color: rgba(255, 255, 255, 0.5);
+   padding: 10px;
+   margin: 20px 10px;
+   box-sizing: border-box;
+   border: 15px inset;
+   border-radius: 100px;
+   border-top-color: rgba(20, 20, 20, .5);
+   border-left-color: rgba(20, 20, 20, .5);
+   border-right-color: rgba(225, 225, 225, .5);
+   border-bottom-color: rgba(225, 225, 225, .5);
+ }

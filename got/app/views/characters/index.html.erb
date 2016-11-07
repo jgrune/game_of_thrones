@@ -1,0 +1,11 @@
+<h1>Characters <%= link_to "(+)", new_character_path %></h1>
+<main>
+
+<% @characters.each do |char| %>
+  <div class="got">
+    <h2><%= link_to char.name, character_path(char.id) %></h2>
+
+    <img src="<%= char.img_url %>">
+  </div>
+<% end %>
+</main>

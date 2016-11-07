@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Got</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Game of Thrones Wiki</h1>
+    <%= link_to "Houses", houses_path %> |
+    <%= link_to "Characters", characters_path %>
+    <%= yield %>
+
+    <section>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </section>
+
+  </body>
+
+</html>
