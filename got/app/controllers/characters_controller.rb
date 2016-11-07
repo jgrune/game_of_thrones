@@ -32,6 +32,7 @@ class CharactersController < ApplicationController
 
   def update
     @char = Character.find(params[:id])
+    @char.house_id = params[:house_id]
     @char.update!(character_params)
     redirect_to @char
   end
